@@ -7,5 +7,5 @@ Settings can be managed here: https://www.ravelry.com/pro/<YOUR-RAVELRY-SHOP-NAM
 $client_id = ''; // your client id
 $client_secret = ''; // your client secret
 $redirect_uri = ''; // your redirect uri
-$state = '1234xyzabc'; // just a random string - api requires it, we don't use it (yet)
+$state = 'lotsofsheep'; // just a random string - api requires it, we don't use it (yet)
 ?>
