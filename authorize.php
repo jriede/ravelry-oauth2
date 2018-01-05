@@ -8,7 +8,7 @@ include_once('./inc.php');
 <?php
 if(isset($_GET['code'])) {
 
-  $output = shell_exec('curl -u "'.$client_id.':'.$client_secret.'" -v "https://www.ravelry.com/oauth2/token" -d "grant_type=authorization_code&code='.$_GET['code'].'&redirect_uri=https://knitting.today/ravelry/authorize.php"');
+  $output = shell_exec('curl -u "'.$client_id.':'.$client_secret.'" -v "https://www.ravelry.com/oauth2/token" -d "grant_type=authorization_code&code='.$_GET['code'].'&redirect_uri=$redirect_uri"');
   echo "<br><br>out: ".print_r($output);
 
   $result_json = json_decode($output, true);
